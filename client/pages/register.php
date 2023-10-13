@@ -24,7 +24,6 @@
             </div>
             <input type="submit" value="Register">
             <p>Already a member <a href="login.php" class="button_link">LOGIN</a></p>
-
        </div>
     </form>
 <script src="../scripts/image_input.js"></script>
