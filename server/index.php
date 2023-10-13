@@ -1,9 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['session'])) {
-    header('Location: /server/auth/login.php');
+if (!isset($_SESSION['user_id'])) {
+    header('Location: /client/pages/login.php');
     exit;
 } else {
-    include ('../pages/home.php');
+    include ('../client/pages/home.php');
 }
 ?>

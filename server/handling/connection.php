@@ -1,5 +1,5 @@
 <?php
-$host = '192.168.188.146';
+$host = '192.168.188.59';
 $dbname = 'storage';
 $username = 'webdev';
 $password = 'password';
