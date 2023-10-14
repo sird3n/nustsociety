@@ -4,6 +4,11 @@ html {
   font-weight: bold;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 input,
 button {
   outline: none;
@@ -27,5 +32,17 @@ input[type="button"] {
   border-radius: 50px;
   padding: 6px 8px;
   font-size: 12px;
+  cursor: pointer;
   text-decoration: none;
+}
+
+.button_link:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+input[type="submit"]:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
 }
