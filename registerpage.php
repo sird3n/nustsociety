@@ -1,8 +1,8 @@
 <?php
-include_once('top.php')
+require_once 'top.php'
 ?>
 
-<form name="register" action="/inc/register.inc.php" method="post" enctype="multipart/form-data">
+<form name="register" action="inc/register.inc.php" method="post" enctype="multipart/form-data">
     <div class="image_input" id="image-input">
         <label for="image" class="imginp"></label>
         <input class="imginp" type="file" id="image" name="image" accept="image/*" required>
@@ -17,10 +17,10 @@ include_once('top.php')
             <input type="password" name="password" id="password" placeholder='Password' required>
         </div>
         <input type="submit" value="Register">
-        <p>Already a member <a href="login-page.php" class="button_link">LOGIN</a></p>
+        <p>Already a member <a href="loginpage.php" class="button_link">LOGIN</a></p>
     </div>
 </form>
 
 <?php
-include_once('bottom.php')
+require_once 'bottom.php'
 ?>

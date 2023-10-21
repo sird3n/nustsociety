@@ -1,5 +1,5 @@
 <?php
-require_once ('connection.php');
+require_once ('db.inc.php');
 
 session_start();
 
@@ -19,12 +19,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_id'] = $user['UserID'];
             $_SESSION['username'] = $user['Username'];
 
-            header('Location: /home-page.php');
+            header('Location: ../homepage.php');
             exit;
         } else {
-            header('Location: /login.page.php');
+            header('Location: ../loginpage.php');
         }
     } else {
-        header('Location: /register.page.php');
+        header('Location: ../registerpage.php');
     }
 }

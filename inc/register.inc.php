@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $statement = $pdo->prepare($query);
 
     if ($statement->execute([$name, $surname, $username, $imageData, $imageName, $password])) {
-        header('Location: /login-page.php');
+        header('Location: login-page.php');
         exit;
     }
 }

@@ -1,20 +1,21 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id'])) {
-    header('Location: /pages/login.php');
-} 
 ?>
-
-
-<nav>
+<nav name='nav'>
     <ul class="nav-list">
-        <li class="nav-item"><a href="">Home</a></li>
-        <li class="nav-item"><a href="">Login</a></li>
+        <?php
+        if (isset($_SESSION['user_id'])) {
+            echo '<li class="nav-item"><a href="homepage.php">Home</a></li>';
+            echo '<li class="nav-item"><a href="eventpage.php">Event</a></li>';
+            echo '<li class="nav-item"><a href=""><img src="" alt="user picture"></a></li>';
+            echo '<li class="nav-item"><a href="inc/logout.inc.php">Logout</a></li>';
+        }
+        ?>
         <?php
         if (!isset($_SESSION['user_id'])) {
-            echo '<li class="nav-item"><a href="">Register</a></li>';
-            echo '<li class="nav-item"><a href=""><img src="" alt="user picture"></a></li>';
-            echo '<li class="nav-item"><a href="">Logout</a></li>';
+            echo '<li class="nav-item"><a href="homepage.php">Home</a></li>';
+            echo '<li class="nav-item"><a href="registerpage.php">Register</a></li>';
+            echo '<li class="nav-item"><a href="loginpage.php">Login</a></li>';
         }
         ?>
     </ul>

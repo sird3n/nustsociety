@@ -1,9 +1,9 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /login-page.php');
+    header('Location: loginpage.php');
     exit;
 } else {
-    header('Location: /home-page.php');
+    header('Location: homepage.php');
 }
 ?>
