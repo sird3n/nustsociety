@@ -1,8 +1,7 @@
 <?php
 
 ?>
-
-<div class="posts">
+<div class="posts" id="posts">
     <div name='container'>
         <div class="image_post">
             <div class="post_header">
