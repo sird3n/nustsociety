@@ -1,5 +1,5 @@
 <?php
-require_once ('db.inc.php');
+require_once('db.inc.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $statement = $pdo->prepare($query);
 
     if ($statement->execute([$name, $surname, $username, $imageData, $imageName, $password])) {
-        header('Location: login-page.php');
+        header('Location: ../loginpage.php');
         exit;
     }
 }

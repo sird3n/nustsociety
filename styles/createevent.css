@@ -1,0 +1,34 @@
+form[name="createevent"] {
+  width: 100%;
+  padding: 40px 0;
+  padding-top: 80px;
+  border-bottom: 0.01rem solid black;
+  gap: 20px;
+}
+
+.eventdata {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+form[name="createevent"] .image_input {
+  width: 180px;
+  height: 80px;
+  border-radius: 18px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 0.01rem solid black;
+  cursor: pointer;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+form[name="createevent"] .data {
+  display: flex;
+  gap: 20px;
+}

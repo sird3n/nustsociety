@@ -10,6 +10,9 @@ echo '<!DOCTYPE html>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/post.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/addpost.css">
+    <link rel="stylesheet" href="styles/createevent.css">
+    <link rel="stylesheet" href="styles/events.css">
 </head>
 
 <body>';
