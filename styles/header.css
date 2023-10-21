@@ -21,12 +21,6 @@ header > .eventcontainer > .content {
   padding: 14px;
   position: absolute;
   color: rgb(255, 255, 255);
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.776),
-    rgba(136, 111, 111, 0.428)
-  );
-  backdrop-filter: blur(5px);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.776), rgba(0, 0, 0, 0));
   bottom: 0px;
-  z-index: 10;
 }
