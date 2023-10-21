@@ -19,13 +19,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_id'] = $user['UserID'];
             $_SESSION['username'] = $user['Username'];
 
-            header('Location: /pages/home.php');
+            header('Location: /home-page.php');
             exit;
         } else {
-            header('Location: /pages/login.php');
+            header('Location: /login.page.php');
         }
     } else {
-        header('Location: /pages/register.php');
+        header('Location: /register.page.php');
     }
 }
-?>

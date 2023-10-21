@@ -5,6 +5,5 @@ if (isset($_SESSION['user_id'])) {
     session_destroy();
 }
 
-header('Location: login.php');
+header('Location: /login-page.php');
 exit;
-?>

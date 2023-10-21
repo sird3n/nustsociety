@@ -1,0 +1,17 @@
+nav {
+  width: 100vw;
+  padding: 10px;
+  border-bottom: 0.01rem solid black;
+}
+nav ul {
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+nav ul li,
+a {
+  list-style: none;
+  color: black;
+}
