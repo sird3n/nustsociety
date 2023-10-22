@@ -1,8 +1,10 @@
 <?php
 require_once('db.inc.php');
+session_start();
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $UserID = $_POST['UserID'];
+    $UserID = $_SESSION['user_id'];
     $Title = $_POST['Title'];
     $Description = $_POST['Description'];
     $imageData = file_get_contents($_FILES['image']['tmp_name']);

@@ -6,7 +6,6 @@
         </div>
         <div class="data">
             <div class="event_data">
-                <input type="hidden" name="UserID" id="UserID" value="<?php $_SESSION['user_id'] ?>">
                 <input type="text" name="Title" id="Title" placeholder='Title' required>
                 <input type="text" name="Description" id="Description" placeholder='Description' required>
                 <input type="date" name="StartDate" id="StartDate" placeholder='Start Date' required>

@@ -4,6 +4,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 55px;
 }
 
 header .eventcontainer {
@@ -29,7 +30,7 @@ header .eventcontainer {
 }
 
 header > .eventcontainer > .content {
-  width: calc(100% - 20px);
+  width: calc(100% - 60px);
   padding: 40px;
   position: absolute;
   color: rgb(255, 255, 255);

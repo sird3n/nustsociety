@@ -1,22 +1,27 @@
-const comment = document.getElementById("comment_toggle");
-const postsegment = document.getElementById("posts");
-const post_comment = document.getElementById("post_comment");
+const commentToggles = document.querySelectorAll("#comment_toggle");
+const postComments = document.querySelectorAll("#post_comment");
 
-comment.addEventListener("click", (e) => {
-  post_comment.classList.toggle("show");
+commentToggles.forEach((commentToggle, index) => {
+  commentToggle.addEventListener("click", (e) => {
+    postComments[index].classList.toggle("show");
+  });
 });
 
-let isSticky = false;
+const mainDiv = document.getElementById("main");
+const headerHeight = mainDiv.offsetHeight;
+let isFixed = false;
 
-window.addEventListener("scroll", () => {
-  const rect = scrollingDiv.getBoundingClientRect();
+window.addEventListener("scroll", function () {
+  const scrollPosition = window.pageYOffset;
 
-  if (rect.top <= 0) {
-    isSticky = true;
-    postsegment.style.position = "fixed";
-    postsegment.style.top = "0";
-  } else if (isSticky) {
-    isSticky = false;
-    postsegment.style.position = "static";
+  if (scrollPosition >= headerHeight) {
+    if (!isFixed) {
+      mainDiv.style.position = "fixed";
+      mainDiv.style.top = "0";
+      isFixed = true;
+    }
+  } else {
+    mainDiv.style.position = "relative";
+    isFixed = false;
   }
 });
