@@ -13,12 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($stmt) {
             $stmt->execute([$postID, $UserID, $content]);
-            echo 'Comment added successfully.';
-        } else {
-            echo 'Failed to prepare the statement.';
+            header('Location: ../homepage.php');
+            exit;
         }
-    } else {
-        header('Location: ../homepage.php');
     }
 }
 ?>

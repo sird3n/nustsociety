@@ -19,13 +19,10 @@ ini_set('display_errors', 1);
             echo '</div>';
 
             echo '<div class="right">';
+            echo '<li class="addpost"><a  href="addpost.php">Add Post</a></li>';
             if ($image) {
                 echo '<li class="nav-item profile-link" name="profilepiture"><a href="profilepage.php">';
                 echo '<img src="data:image/jpeg;base64,' . base64_encode($image['ImageData']) . '" alt="user picture">';
-                echo '</a></li>';
-            } else {
-                echo '<li class="nav-item profile-link"><a href="">';
-                echo '<img src="https://questhowth.ie/wp-content/uploads/2018/04/user-placeholder.png" alt="user picture">';
                 echo '</a></li>';
             }
             echo '<li class="nav-item"><a href="inc/logout.inc.php">Logout</a></li>';
@@ -47,4 +44,3 @@ ini_set('display_errors', 1);
         ?>
     </ul>
 </nav>
-
