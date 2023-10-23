@@ -96,10 +96,6 @@ ul[name="postcontainer"] {
   padding: 0 20px;
 }
 
-.post_text h3 {
-  line-height: 0;
-}
-
 .post_text p {
   font-weight: normal;
 }
