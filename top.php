@@ -13,7 +13,7 @@ echo '<!DOCTYPE html>
     <link rel="stylesheet" href="styles/addpost.css">
     <link rel="stylesheet" href="styles/createevent.css">
     <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/profilepage.css">
 </head>
 
 <body>';
-?>

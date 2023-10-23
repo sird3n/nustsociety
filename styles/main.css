@@ -11,7 +11,6 @@
 .sidebar {
   width: 800px;
   position: sticky;
-  background-color: blue;
 }
 ul[name="postcontainer"] {
   width: 100%;
