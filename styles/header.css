@@ -1,10 +1,11 @@
 header {
   width: 100vw;
-  height: 65vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 55px;
+  padding-top: 100px;
+  background-color: red !important;
 }
 
 header .eventcontainer {

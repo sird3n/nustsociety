@@ -8,6 +8,7 @@ echo '<!DOCTYPE html>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/addpost.css">

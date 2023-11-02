@@ -16,6 +16,7 @@ ini_set('display_errors', 1);
             echo '<div class="left">';
             echo '<li class="nav-item"><a href="homepage.php">Home</a></li>';
             echo '<li class="nav-item"><a href="eventpage.php">Event</a></li>';
+            echo '<li class="nav-item"><a href="contactus.php">Contact Us</a></li>';
             echo '</div>';
 
             echo '<div class="right">';
@@ -33,13 +34,13 @@ ini_set('display_errors', 1);
         if (!isset($_SESSION['user_id'])) {
             echo '<div class="left">';
             echo '<li class="nav-item"><a href="homepage.php">Home</a></li>';
+            echo '<li class="nav-item"><a href="contactus.php">Contact Us</a></li>';
             echo '</div>';
 
             echo '<div class="right">';
             echo '<li class="nav-item"><a href="registerpage.php">Register</a></li>';
             echo '<li class="nav-item"><a href="loginpage.php">Login</a></li>';
             echo '</div>';
-
         }
         ?>
     </ul>
